@@ -61,4 +61,4 @@ In our data, the third collumn of the data contains candidate's names and the se
   # 3: Extract the county name from each row.
   county_name = row[32]
 ~~~
-We believe these should be the only adjustments necessary to apply this script to any csv stored election data. If you encounter any other problems in adjusting the script, please contact us so the readme can be updated.
+We believe these are the only adjustments necessary to apply this script to any csv stored election data. If you encounter any other problems in adjusting the script, please contact us so the readme can be updated.
