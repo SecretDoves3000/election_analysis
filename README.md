@@ -40,9 +40,9 @@ We were tasked with adding functionality to look at the voter turnout in each co
 ## Election-Audit Summary
 The PyPoll script developed can be used with minor modifications to tally votes in any election. To do so, the script should be placed in a folder with the ballot data stored as a csv. The code on lines 8-11 should be adjusted to reflect the name and path of the files in question:
 '''
-'# Add a variable to load a file from a path.
-file_to_load = os.path.join("Resources", "election_results.csv")
-# Add a variable to save the file to a path.
-file_to_save = os.path.join("analysis", "election_analysis.txt")
+  '# Add a variable to load a file from a path.
+  file_to_load = os.path.join("Resources", "election_results.csv")
+  # Add a variable to save the file to a path.
+  file_to_save = os.path.join("analysis", "election_analysis.txt")
 '''
 Some sections of the code need also be adjusted for different structures of ballot data. This will require investigating the structure of the ballot data csv. In particular the code on lines 46-50 needs to be adjusted so the index of the relevant data  
