@@ -1,4 +1,4 @@
-# Election_Analysis
+# Election Analysis
 
 ## Project Overview
 We were tasked with tallying votes and evaluating results from a Colorado election. Our steps were:
