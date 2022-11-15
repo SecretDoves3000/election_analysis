@@ -53,7 +53,7 @@ Some sections of the code need also be adjusted for different structures of ball
   # 3: Extract the county name from each row.
   county_name = row[1]
 ~~~
-In our data, the third collumn of the data contains candidate's names and the second column contains the county name. If, for example, the candidate's name was in the 10th row and the county was in the 33'rd, we would need to adjust the above code to be:
+In our data, the third collumn of the data contains candidate's names and the second column contains the county name. If, for example, the candidate's name was in the 10'th row and the county was in the 33'rd, we would need to adjust the above code to be:
 ~~~python
   # Get the candidate name from each row.
   candidate_name = row[9]
