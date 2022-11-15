@@ -45,4 +45,20 @@ The PyPoll script developed can be used with minor modifications to tally votes 
   # Add a variable to save the file to a path.
   file_to_save = os.path.join("analysis", "election_analysis.txt")
 ~~~
-Some sections of the code need also be adjusted for different structures of ballot data. This will require investigating the structure of the ballot data csv. In particular the code on lines 46-50 needs to be adjusted so the index of the relevant data  
+Some sections of the code need also be adjusted for different structures of ballot data. This will require investigating the structure of the ballot data csv. In particular the code on lines 46-50 needs to be adjusted so the index of the relevant data:
+~~~python
+  # Get the candidate name from each row.
+  candidate_name = row[2]
+
+  # 3: Extract the county name from each row.
+  county_name = row[1]
+~~~
+In our data, the third collumn of the data contains candidate's names and the second column contains the county name. If, for example, the candidate's name was in the 10th row and the county was in the 33'rd, we would need to adjust the above code to be:
+~~~python
+  # Get the candidate name from each row.
+  candidate_name = row[9]
+
+  # 3: Extract the county name from each row.
+  county_name = row[32]
+~~~
+We believe these should be the only adjustments necessary to apply this script to any csv stored election data. If you encounter any other problems in adjusting the script, please contact us so the readme can be updated.
